@@ -8,3 +8,4 @@
 /styles.*.css
 /[0-9]*.js
 /svg/
+.vercel

@@ -39,7 +39,7 @@
     const flows = {
       send:{title:'Send Money',intro:'Pay someone securely from your Yami balance.',label:'RECIPIENT MOBILE NUMBER',value:'072 555 0198',choices:[50,100,250],verb:'Money sent',detail:'sent to'},
       request:{title:'Request Money',intro:'Send a clear payment request to someone you trust.',label:'REQUEST FROM',value:'071 440 8821',choices:[50,150,300],verb:'Request sent',detail:'requested from',noCharge:true},
-      withdraw:{title:'Withdraw',intro:'Create a secure cash voucher for collection.',label:'COLLECTION METHOD',value:'Yami ATM voucher',choices:[100,250,500],verb:'Withdrawal voucher ready',detail:'prepared for'},
+      withdraw:{title:'Withdraw',intro:'Create a secure cash voucher for collection.',label:'COLLECTION METHOD',value:'Sasol ATM Voucher',choices:[100,250,500],verb:'Withdrawal voucher ready',detail:'prepared for'},
       deposit:{title:'Deposit',intro:'Add money to Yami from a linked payment source.',label:'DEPOSIT FROM',value:'Mastercard •••• 4821',choices:[100,300,500],verb:'Deposit completed',detail:'added from',adds:true,cardCheckout:true}
     };
     const config=flows[flow]||flows.send;let selected=0,wallet=YamiWallet.get();
