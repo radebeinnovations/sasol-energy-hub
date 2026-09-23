@@ -34,11 +34,11 @@
     ion-card.bills-wrapper.yami-sync-card { background:transparent !important; box-shadow:none !important; border:0 !important; }
     ion-card.bills-wrapper.yami-sync-card ion-col { box-shadow:0 8px 19px rgba(0,59,113,.14) !important; }
     .app { background:#fff !important; box-shadow:none !important; }
-    .head { background:linear-gradient(135deg,#003b71,#00579e) !important; }
+    .head { background:#012d5c !important; }
     .wallet-mark, .primary { background:linear-gradient(135deg,#003b71,#006ab2) !important; box-shadow:0 7px 16px rgba(0,59,113,.22) !important; }
     .wallet-mark { font-size:0 !important; }
     .wallet-mark::after { content:'S'; font-size:20px; font-style:normal; font-weight:900; }
-    .brand { font-size:0 !important; min-width:126px; min-height:32px; background:url('/assets/brand/sasol-logo.png') left center/126px auto no-repeat; filter:none; }
+    .brand { width:124px !important; min-width:124px; min-height:76px; font-size:0 !important; background:#012d5c url('/assets/brand/sasol-navy-mark.png') left center/108px auto no-repeat; filter:none; }
     .brand::after { display:none !important; }
     .back, .mini-back, [data-yami-back] { background:var(--sasol-blue) !important; }
     .back:hover, .mini-back:hover, [data-yami-back]:hover { background:#006ab2 !important; }
