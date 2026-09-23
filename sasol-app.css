@@ -50,10 +50,10 @@ button:focus-visible { outline:3px solid rgba(0,168,224,.45); outline-offset:3px
 .bottom-nav svg { width:21px; height:21px; fill:none; stroke:currentColor; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.8; }
 .mini-app { position:fixed; z-index:100; inset:0; display:none; background:#fff; }
 .mini-app.is-open { display:flex; flex-direction:column; }
-.mini-app__bar { display:flex; min-height:68px; align-items:center; justify-content:space-between; padding:6px 14px; border-bottom:1px solid var(--line); background:#fff; }
-.mini-app__bar > div { display:flex; align-items:center; gap:12px; color:var(--blue); font-size:15px; font-weight:850; }
-.mini-app__bar img { width:118px; height:54px; object-fit:contain; }
-.mini-app__bar button { display:grid; width:36px; height:36px; place-items:center; border:1px solid #cfdfeb; border-radius:50%; background:var(--blue); color:#fff; font-size:28px; line-height:1; cursor:pointer; }
+.mini-app__bar { display:flex; min-height:68px; align-items:center; justify-content:space-between; padding:6px 14px; border-bottom:1px solid #174773; background:#012d5c; }
+.mini-app__bar > div { display:flex; align-items:center; gap:12px; color:#fff; font-size:15px; font-weight:850; }
+.mini-app__bar img { width:62px; height:56px; object-fit:contain; }
+.mini-app__bar button { display:grid; width:36px; height:36px; place-items:center; border:1px solid rgba(255,255,255,.3); border-radius:50%; background:rgba(255,255,255,.12); color:#fff; font-size:28px; line-height:1; cursor:pointer; }
 .mini-app iframe { width:100%; flex:1; border:0; background:#fff; }
 @media (min-width:760px) { body { background:#edf5f9; } .shell { min-height:100vh; background:#fff; box-shadow:0 0 55px rgba(0,59,113,.09); } .bottom-nav { right:calc((100% - 760px)/2); left:calc((100% - 760px)/2); } }
 @media (max-width:370px) { .shell { padding-right:13px; padding-left:13px; } .quick-actions { gap:6px; } .quick-actions button { min-height:82px; font-size:9px; } .balance-card { padding:20px; } .balance-card strong { font-size:27px; } }
