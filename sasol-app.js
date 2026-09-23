@@ -38,7 +38,7 @@
   const openMiniApp = (destination, name) => {
     title.textContent = name || 'Service';
     frame.title = `Sasol Energy ${name || 'service'}`;
-    frame.src = destination;
+    frame.src = destination === 'ekurhuleni-bus.html' ? `${destination}?v=metrobus-2` : destination;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
