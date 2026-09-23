@@ -1,0 +1,10 @@
+# The standalone Sasol demo uses the static dashboard and mini-app files below.
+# Omit the unused compiled Yami authentication shell and its remote API client.
+/authentication/
+/common.*.js
+/main.*.js
+/polyfills.*.js
+/runtime.*.js
+/styles.*.css
+/[0-9]*.js
+/svg/
