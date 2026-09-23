@@ -21,7 +21,7 @@
     if (!doc?.head || doc.getElementById('sasol-brand-script')) return;
     const brand = doc.createElement('script');
     brand.id = 'sasol-brand-script';
-    brand.src = '/sasol-brand.js?v=4';
+    brand.src = '/sasol-brand.js?v=5';
     doc.head.appendChild(brand);
     if (!doc.querySelector('script[src*="yami-wallet.js"]')) {
       const wallet = doc.createElement('script');

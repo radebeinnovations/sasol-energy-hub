@@ -46,6 +46,8 @@
     .head > .top > .back { display:none !important; }
     .head > .top > .brand { margin-left:0 !important; }
     .app > .top > .back { display:none !important; }
+    .app > .top > h1 { grid-column:2 !important; }
+    .app > .top > span { grid-column:3 !important; }
     .hero > .bar > .mini-back { display:none !important; }
     .back, .mini-back, [data-yami-back] { background:var(--sasol-blue) !important; }
     .back:hover, .mini-back:hover, [data-yami-back]:hover { background:#006ab2 !important; }
