@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name="theme-color" content="#000b36"/>
-<title>Ekurhuleni MetroBus Wallet | Yami</title>
-<meta name="description" content="Ekurhuleni MetroBus Wallet — tap to ride across Germiston, Boksburg, Benoni, Kempton Park and more."/>
+<meta name="theme-color" content="#0b6264"/>
+<title>Ekurhuleni Bus Service | Yami</title>
+<meta name="description" content="Ekurhuleni Bus Service — tap to ride across Germiston, Boksburg, Benoni, Kempton Park and more."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -43,12 +43,13 @@ button{font:inherit;cursor:pointer;border:0}.app-shell{min-height:100vh;display:
 .bundle-tabs{display:flex;gap:9px;margin:18px 0}.bundle-tabs button{padding:9px 15px;border:1px solid #dce2e9;border-radius:999px;background:white;color:#515562;font-weight:700}.bundle-tabs .active{background:var(--navy);color:white}.bundle{position:relative;margin:15px 0;padding:20px;border:1px solid #dde3ec;border-radius:25px;background:white;color:var(--navy)}.bundle.selected{outline:2px solid var(--navy);box-shadow:0 0 0 3px var(--lime)}.bundle strong{font-size:29px}.bundle strong small{padding:5px 8px;border-radius:6px;background:#eef0f4;font-size:11px}.bundle>b{float:right;font-size:24px}.bundle p{color:#515968;font-size:12px}.bundle footer{padding-top:14px;border-top:1px solid #e0e5ea;color:#536d00;font-size:12px}.recipient-card{margin:10px 0 28px;padding:18px;border:1px solid #dce3ed;border-radius:24px;background:white}.recipient-card p{margin:0 0 15px;color:#596277;font-size:12px;font-weight:800}.recipient-card p b{float:right;color:#567300}.recipient-card>div{display:grid;grid-template-columns:1fr 1fr;gap:10px}.recipient-card strong,.recipient-card span{padding:13px;border-radius:14px;background:#f0f2f5;color:#172052;font-size:12px}.recipient-card strong{background:white;box-shadow:0 3px 9px #07102b1c}.receipt-link{width:100%;margin-top:10px;padding:15px;border:1px solid #cdd5e3;border-radius:14px;background:white;color:var(--navy);font-weight:700}
 @media(max-width:520px){.app-shell{padding:0}.phone{width:100%;height:100dvh;box-shadow:none}}
 </style>
+<link rel="stylesheet" href="ekurhuleni-bus-overrides.css?v=1"/>
 </head>
 <body>
-<main class="app-shell" aria-label="Ekurhuleni MetroBus Wallet">
+<main class="app-shell" aria-label="Ekurhuleni Bus Service Wallet">
   <section id="app" class="phone" aria-live="polite">
     <div style="padding:40px; text-align:center; color:#0b1f5c;">
-      <h2>Loading MetroBus...</h2>
+      <h2>Loading Ekurhuleni Bus...</h2>
       <p>If this screen stays here, Javascript is not running or the app is cached.</p>
     </div>
   </section>
@@ -76,7 +77,7 @@ const tapIcon = '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d
 const paymentIcon = (type) => type==='card'
   ? '<svg viewBox="0 0 54 40" aria-label="Debit card"><rect x="1" y="1" width="52" height="38" rx="8" fill="#102970"/><path d="M7 12h40" stroke="#d5ff00" stroke-width="3"/><circle cx="34" cy="28" r="7" fill="#eb001b"/><circle cx="42" cy="28" r="7" fill="#ff9900" fill-opacity=".9"/></svg>'
   : '<svg viewBox="0 0 54 40" aria-label="Instant EFT"><rect x="1" y="1" width="52" height="38" rx="8" fill="#f0f2f5"/><path d="M9 17h36M12 14l15-7 15 7M14 19v10M22 19v10M30 19v10M38 19v10M9 31h36" stroke="#07174b" stroke-width="2.5" stroke-linejoin="round"/></svg>';
-const BRAND = 'Ekurhuleni MetroBus';
+const BRAND = 'Ekurhuleni Bus';
 const TAG_DEFAULT = 'EMB-7741-K';
 const SUPPORT_NUMBER = '011 999 0000';
 console.log('[Ekurhuleni MetroBus] Mini-app script starting...');
