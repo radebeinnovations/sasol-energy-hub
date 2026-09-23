@@ -21,7 +21,7 @@
     if (!doc?.head || doc.getElementById('sasol-brand-script')) return;
     const brand = doc.createElement('script');
     brand.id = 'sasol-brand-script';
-    brand.src = '/sasol-brand.js?v=2';
+    brand.src = '/sasol-brand.js?v=3';
     doc.head.appendChild(brand);
     if (!doc.querySelector('script[src*="yami-wallet.js"]')) {
       const wallet = doc.createElement('script');
@@ -38,7 +38,7 @@
   const openMiniApp = (destination, name) => {
     title.textContent = name || 'Service';
     frame.title = `Sasol Energy ${name || 'service'}`;
-    frame.src = destination === 'ekurhuleni-bus.html' ? `${destination}?v=metrobus-2` : destination;
+    frame.src = destination === 'ekurhuleni-bus.html' ? `${destination}?v=metrobus-4` : destination;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';

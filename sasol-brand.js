@@ -42,6 +42,9 @@
     .wallet-mark::after { content:'S'; font-size:20px; font-style:normal; font-weight:900; }
     .brand { width:130px !important; min-width:130px; min-height:54px; font-size:0 !important; background:transparent url('/assets/brand/sasol-horizontal-mark.png') left center/128px auto no-repeat; filter:none; }
     .brand::after { display:none !important; }
+    .head > .top { justify-content:flex-start !important; }
+    .head > .top > .back { display:none !important; }
+    .head > .top > .brand { margin-left:0 !important; }
     .back, .mini-back, [data-yami-back] { background:var(--sasol-blue) !important; }
     .back:hover, .mini-back:hover, [data-yami-back]:hover { background:#006ab2 !important; }
     .sasol-promo-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:8px 16px 22px; }
